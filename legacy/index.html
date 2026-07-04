@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdelrahman Khaled — FULL STACK Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+ 
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="cursor-trail-canvas"></canvas>
+
+
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">AK<span>.</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="mobileNav">
+    <a href="#home"     onclick="closeMobile()">Home</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#contact"  onclick="closeMobile()">Contact</a>
+  </div>
+
+
+  <section id="home">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-label">Full Stack Developer</p>
+
+          <h1 class="hero-headline">
+            Turning <em>Ideas</em> Into Real Web Experiences
+          </h1>
+
+          <p class="hero-sub">
+            Hi, I'm Abdelrahman Khaled — a Full Stack Developer who transforms ideas into modern, fast, and interactive web experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <img
+              src="me1.png"
+              alt="Abdelrahman Khaled — thinking"
+              loading="eager"
+            />
+          </div>
+
+          <div class="hero-frame"></div>
+
+          <div class="hero-chip hero-chip-1">
+            <span>3+</span>
+            years of craft
+          </div>
+          <div class="hero-chip hero-chip-2">
+            <span>✦</span>
+            available for work
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="scroll-hint">
+      <div class="scroll-hint-line"></div>
+      scroll
+    </div>
+  </section>
+
+
+
+  <section id="pointing">
+    <div class="blob blob-3"></div>
+
+    <div class="container">
+      <div class="pointing-grid">
+
+        <div class="pointing-visual reveal">
+          <div class="pointing-img-frame">
+
+            <img
+              src="me2.png"
+              alt="Abdelrahman Khaled — pointing toward work"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="glow-trail"></div>
+        </div>
+
+        <div class="pointing-text reveal">
+          <p class="section-eyebrow">Follow the direction</p>
+
+          <h2 class="pointing-headline">
+           Scroll Down<br><em>To see</em>&hairsp;…<br>that's where my work lives.
+          </h2>
+
+          <p class="pointing-sub">
+            Every idea starts with stillness. Then comes direction. Below is where the thinking becomes real — refined, functional, and alive.
+          </p>
+
+          <a href="#projects" class="arrow-link">
+            <span class="arrow-link-line"></span>
+            See the work
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="projects">
+    <div class="blob blob-4"></div>
+    <div class="blob blob-5"></div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Selected <em>Work</em></h2>
+        <p class="section-divider">projects</p>
+      </div>
+
+      <div class="projects-grid">
+
+
+        <article class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder"><img src="PROJECT1.png" alt="Project Name" loading="lazy" /></div>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">HTML · CSS · JavaScript · Node.js</p>
+
+            <h3 class="project-title">Shop System</h3>
+
+            <p class="project-desc">
+                A responsive e-commerce website that allows users to browse products, add items to their cart, and securely checkout using a clean and intuitive interface.
+                Technologies: HTML, CSS, JavaScript, Node.js.
+            </p>
+
+            <div class="project-actions">
+              <a href="https://ff-alpha-one.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder"><img src="project2.png" alt="Project Image 2"></div>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">HTML · CSS · JS · Python</p>
+            <h3 class="project-title">Online Order Track</h3>
+            <p class="project-desc">
+              A responsive dashboard that enables businesses to manage customer orders, track order status, filter data, and generate invoices through a clean and organized interface.
+Technologies: HTML, CSS, JavaScript.
+            </p>
+
+            <div class="project-actions">
+              <a href="https://dokan-eight.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-glow"></div>
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder"><img src="Project3.png" alt="Project Image 3"></div>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">HTML · CSS · JS · NestJS</p>
+            <h3 class="project-title">Responsive Healthcare Clinic Website</h3>
+            <p class="project-desc">
+              A responsive website for a healthcare clinic, featuring an intuitive design and seamless user experience.
+              Technologies: HTML, CSS, JavaScript, NestJS.
+            </p>
+
+            <div class="project-actions">
+              <a href="https://clinic-for-test.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="blob blob-6"></div>
+<div class="container">
+  <div class="about-grid">
+
+    <div class="about-left reveal">
+      <div class="about-code-block">
+        <div class="code-comment">// developer.profile</div>
+        <br>
+        <div>
+          <span class="code-key">const</span>
+          <span style="color:var(--text)"> developer </span>
+          <span class="code-key">= </span>
+          <span style="color:var(--text)">{</span>
+        </div>
+
+        <div class="code-indent">
+          <span class="code-key">name</span>:
+          <span class="code-str"> "Abdelrahman Khaled"</span>,
+        </div>
+
+        <div class="code-indent">
+          <span class="code-key">role</span>:
+          <span class="code-str"> "Full Stack Developer"</span>,
+        </div>
+
+        <div class="code-indent">
+          <span class="code-key">focus</span>: [<br>
+          <span style="padding-left:3rem"><span class="code-str">"Front-End Development"</span>,</span><br>
+          <span style="padding-left:3rem"><span class="code-str">"Back-End APIs"</span>,</span><br>
+          <span style="padding-left:3rem"><span class="code-str">"Database Architecture"</span></span><br>
+          <span>],</span>
+        </div>
+
+        <div class="code-indent">
+          <span class="code-key">tech</span>: [<br>
+          <span style="padding-left:3rem"><span class="code-str">"NextJS"</span>,</span><br>
+          <span style="padding-left:3rem"><span class="code-str">"Node.js"</span>,</span><br>
+          <span style="padding-left:3rem"><span class="code-str">"MongoDB"</span></span><br>
+          <span>],</span>
+        </div>
+
+        <div class="code-indent">
+          <span class="code-key">available</span>:
+          <span class="code-num"> true</span>,
+        </div>
+
+        <div class="code-indent">
+          <span class="code-key">passion</span>:
+          <span class="code-str"> "building complete<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;web applications"</span>
+        </div>
+
+        <div>}</div>
+      </div>
+    </div>
+
+        <div class="about-right reveal">
+          <p class="section-eyebrow">About me</p>
+
+          <h2 class="about-headline">
+            A developer who <em>cares</em> about the craft.
+          </h2>
+
+<p class="about-body">
+  I'm Abdelrahman Khaled, a Full Stack Developer focused on building complete web applications from concept to deployment. I enjoy turning ideas into scalable, efficient, and user-friendly digital products.<br><br>
+  My work covers both front-end and back-end development — designing clean interfaces, building powerful server logic, and connecting everything with reliable databases to deliver smooth and performant web experiences.
+</p>
+
+<ul class="skills-list">
+  <li class="skill-item">
+    <span class="skill-dot"></span>
+    Front-End Development (HTML, CSS, JavaScript, React)
+  </li>
+  <li class="skill-item">
+    <span class="skill-dot"></span>
+    Back-End Development (Node.js, APIs, Server Logic, NextJS)
+  </li>
+  <li class="skill-item">
+    <span class="skill-dot"></span>
+    Database Design & Full Stack Application Architecture
+  </li>
+</ul>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <div class="blob blob-7"></div>
+
+    <div class="container">
+      <div class="contact-inner reveal">
+        <h2 class="contact-headline">
+          Let's build something<br><em>worth remembering.</em>
+        </h2>
+
+        <p class="contact-sub">
+          Have an idea, a project, or just want to say hello? I'd love to hear from you.
+        </p>
+
+        <div class="contact-links">
+
+          <a href="https://github.com/abdelrahmanK10" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-val">Abdelrahman Khaled</span>
+          </a>
+
+
+          <a href="mailto:abdrhmanq5005@gmail.com" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            </span>
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-val">abdrhmanq5005@gmail.com</span>
+          </a>
+          <a href="https://wa.me/201024191609" target="_blank" rel="noopener" class="contact-link">
+  <span class="contact-link-icon">
+    <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M19.11 17.93c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.12-.59.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.55-.47-.47-.64-.48-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43s1.03 2.81 1.17 3c.14.19 2.03 3.1 4.92 4.34.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+      <path d="M16.04 3C9.94 3 5 7.94 5 14.04c0 1.94.51 3.83 1.49 5.5L5 29l9.72-1.46c1.62.89 3.45 1.36 5.32 1.36 6.1 0 11.04-4.94 11.04-11.04C31.08 7.94 26.14 3 20.04 3h-4z"/>
+    </svg>
+  </span>
+  <span class="contact-link-label">WhatsApp</span>
+  <span class="contact-link-val">+20 102 419 1609</span>
+</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>Abdelrahman Khaled<span>©</span></p>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

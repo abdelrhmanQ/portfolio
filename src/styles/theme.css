@@ -1,0 +1,72 @@
+/* ═══════════════════════════════════════════════════════════════
+   THEME — single source of truth for the Liquid Glass design system.
+   Restyle the whole site by editing only this file.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette ───────────────────────────────────────────────── */
+  --bg:             #080b12;
+  --bg-deep:        #05070d;      /* intro space background */
+  --surface:        #0e1220;
+  --surface-2:      #141a2c;
+  --text:           #e8eaf2;
+  --text-muted:     #8b93ad;
+  --text-dim:       #565d78;
+
+  --accent:         #4f9eff;      /* primary blue   */
+  --accent-2:       #a78bfa;      /* violet         */
+  --accent-3:       #22d3ee;      /* cyan           */
+
+  /* ── Ambient glows (blobs / gradients behind the glass) ────── */
+  --glow-blue:      rgba(79, 158, 255, 0.16);
+  --glow-purple:    rgba(167, 139, 250, 0.13);
+  --glow-cyan:      rgba(34, 211, 238, 0.10);
+
+  /* ── Liquid Glass surfaces ─────────────────────────────────── */
+  --glass-bg:            rgba(255, 255, 255, 0.05);
+  --glass-bg-hover:      rgba(255, 255, 255, 0.08);
+  --glass-bg-strong:     rgba(16, 21, 36, 0.72);   /* fallback / high-contrast panels */
+  --glass-border:        rgba(255, 255, 255, 0.12);
+  --glass-border-hover:  rgba(79, 158, 255, 0.35);
+  --glass-highlight:     rgba(255, 255, 255, 0.16); /* inner top highlight = glass depth */
+  --glass-blur:          18px;
+  --glass-blur-strong:   26px;
+
+  /* ── Layered shadows ───────────────────────────────────────── */
+  --shadow-glass:
+    0 16px 40px rgba(2, 6, 16, 0.45),
+    inset 0 1px 0 var(--glass-highlight);
+  --shadow-glass-hover:
+    0 28px 64px rgba(2, 6, 16, 0.6),
+    0 0 40px rgba(79, 158, 255, 0.08),
+    inset 0 1px 0 var(--glass-highlight);
+
+  /* ── Radius scale ──────────────────────────────────────────── */
+  --radius-sm:   10px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-full: 999px;
+
+  /* ── Motion ────────────────────────────────────────────────── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --hover-scale: 1.02;
+  --duration-fast: 0.3s;
+  --duration-slow: 0.65s;
+
+  /* ── Layout ────────────────────────────────────────────────── */
+  --container-max: 1200px;
+  --space-section: clamp(5rem, 10vw, 8rem);
+
+  /* ── Typography ────────────────────────────────────────────── */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+}
+
+/* Cheaper blur on small screens — backdrop-filter is expensive on mobile GPUs */
+@media (max-width: 768px) {
+  :root {
+    --glass-blur: 12px;
+    --glass-blur-strong: 16px;
+  }
+}
